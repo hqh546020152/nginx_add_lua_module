@@ -22,10 +22,10 @@ tar -xzvf package/v0.2.19.tar.gz
 tar -xzvf package/v0.10.2.tar.gz
 
 #编译安装nginx，并添加进相应的模块
-#wget -c http://nginx.org/download/nginx-1.4.2.tar.gz
-tar xzvf package/nginx-1.4.2.tar.gz
-cd nginx-1.4.2
-./configure --add-module=../ngx_devel_kit-0.2.19/ --add-module=../lua-nginx-module-0.8.6/
+#wget -c http://nginx.org/download/nginx-1.12.2.tar.gz
+tar xzvf nginx-1.12.2.tar.gz
+cd nginx-1.12.2
+./configure --add-module=../ngx_devel_kit-0.2.19/ --add-module=../lua-nginx-module-0.10.2/
 
 make
 make install
